@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black1">#444444</color>
+    <color name="black2">#0e0e0e</color>
+    <color name="black3">#888888</color>
+    <color name="black4">#888888</color>
+    <color name="white1">#ffffff</color>
+    <color name="white">#bbbbbb</color>
+    <color name="black">#111111</color>
+    <color name="icons_blue">#6CACEC</color>
+
+
+    <color name="col1">#A7A7C0</color>
+    <color name="col2">#AC98D1</color>
+    <color name="col3">#C89F78</color>
+    <color name="col4">#A7BEC3</color>
+    <color name="col5">#ACC8C2</color>
+    <color name="col6">#B0C598</color>
+    <color name="col7">#C3B48A</color>
+    <color name="col8">#D3A680</color>
+    <color name="col9">#7ecbf7</color>
+    <color name="col10">#47b5f3</color>
+    <color name="col11">#C8B585</color>
+    <color name="col12">#BACB9F</color>
+    <color name="col13">#A8E3C1</color>
+    <color name="col14">#BEB990</color>
+    <color name="col15">#C8A3A2</color>
+    <color name="col16">#6CC1C7</color>
+    <color name="col17">#93D494</color>
+    <color name="col18">#B4E06C</color>
+    <color name="col19">#AB90B8</color>
+    <color name="col20">#9697C7</color>
+    <color name="opt_col">#8ea4da</color>
+    <color name="tap_color">#89151515</color>
+    <color name="white3">#f2f2f2</color>
+    <color name="tap_color2">#89f9f9f9</color>
+
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/bluetoothState"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="Connecting.."
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="#121212"
+        android:layout_weight=".2"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:id="@+id/bluetoothContent"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="#121212"
+        android:text="keep the band close to your phone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/band_icn"
+            android:layout_weight=".3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/tick1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tick1"
+            android:layout_weight=".3"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:id="@+id/txt_chnage_device"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Change Device"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="left|bottom"
+                android:textColor="#121212"
+                android:layout_weight=".6"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:onClick="change_device_fun"
+                android:paddingBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:focusable="false"
+                android:clickable="true"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="center_vertical|bottom|right"
+                android:textColor="#121212"
+                android:layout_weight=".4"
+                android:paddingRight="15dp"
+                android:onClick="cancel_fun"
+                android:paddingBottom="15dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="bottom"
+                android:id="@+id/next1_div"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Next"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:typeface="sans"
+                    android:textSize="22dp"
+                    android:gravity="center_vertical|bottom|right"
+                    android:textColor="#121212"
+                    android:layout_weight=".4"
+                    android:onClick="cancel_fun"
+                    android:paddingBottom="15dp"
+                    android:visibility="visible"
+                    android:paddingRight="5dp" />
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="42dp"
+                    android:text="0"
+                    android:id="@+id/imageView3"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/ar_right2"
+                    android:scaleType="centerInside"
+                    android:layout_marginBottom="7dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

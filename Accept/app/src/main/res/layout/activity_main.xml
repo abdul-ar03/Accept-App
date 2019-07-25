@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.developments.ar.xhalr.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:id="@+id/b_circle"
+        android:layout_gravity="center"
+        android:src="@drawable/tes"
+        android:visibility="visible"
+        android:scaleType="fitCenter"
+        android:background="#feafaf" />
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:id="@+id/z_circle"
+        android:layout_gravity="center"
+        android:src="@drawable/cirl1"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ready?"
+        android:id="@+id/z_txt"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#201f1f"
+        android:typeface="monospace"
+        android:layout_marginLeft="2dp" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_gravity="end"
+            android:id="@+id/drawer_div1"
+
+            >
+            <include layout="@layout/drawable"></include>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tap_view"
+        android:onClick="tap"
+        android:measureWithLargestChild="false">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/tap_img"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/play"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitXY" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Play"-->
+        <!--android:id="@+id/tap_txt"-->
+        <!--android:layout_gravity="center_horizontal|bottom"-->
+        <!--android:typeface="monospace"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_marginBottom="28dp"-->
+        <!--android:layout_marginLeft="1dp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textIsSelectable="false" />-->
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:id="@+id/ham_icon"
+        android:layout_gravity="right|top"
+        android:src="@drawable/ham1"
+        android:layout_marginTop="20dp"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:scaleType="fitXY"
+        android:onClick="ham_open"
+        android:paddingRight="20dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Stop"-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_gravity="left|bottom"-->
+        <!--android:onClick="stop"-->
+        <!--android:layout_marginBottom="50dp" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Play"-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:onClick="plays"-->
+        <!--android:layout_marginBottom="50dp" />-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="go"-->
+
+        <!--android:layout_gravity="left|bottom"-->
+        <!--android:onClick="go1" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="go"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:onClick="go2" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Small Text"-->
+        <!--android:id="@+id/txt"-->
+        <!--android:layout_gravity="center_horizontal|bottom" />-->
+
+
+</FrameLayout>

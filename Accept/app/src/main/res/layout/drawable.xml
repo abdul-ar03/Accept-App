@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/d_body">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/title"
+                android:src="@drawable/title"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".4" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight=".13"
+                android:onClick="close_ham">
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView4"
+                    android:background="#dc1f1f"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/cancel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use this breathing app to help with your yoga or meditation exercises. If you are suffering from anxiety or panic attacks, please visit the ADAA for more help and tips"
+            android:id="@+id/status_txt"
+            android:textColor="#121212"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:typeface="sans"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:text="New Text"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:background="#414141"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Default"
+                android:id="@+id/opt1"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_weight=".18"
+                android:textColor="#121212"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:onClick="choice_fun" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Square"
+                android:id="@+id/opt2"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_weight=".18"
+                android:textColor="#121212"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:onClick="choice_fun" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Pranayama"
+                android:id="@+id/opt3"
+                android:layout_weight=".22"
+                android:textColor="#121212"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:onClick="choice_fun" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Ujjayi"
+                android:id="@+id/opt4"
+                android:layout_weight=".18"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="#121212"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:onClick="choice_fun" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt11"
+                android:layout_weight=".18"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:background="#8ea4da" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt22"
+                android:layout_weight=".18"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt33"
+                android:layout_weight=".22"
+                android:textColor="#121212"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt44"
+                android:layout_weight=".18"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:typeface="sans"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Breath In"
+                    android:id="@+id/t1"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/txt_in"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/seek_in"
+                 />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style2"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:clickable="false"
+                android:focusable="false"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/d_seek_in"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Hold Breath"
+                    android:id="@+id/t2"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/txt_hold1"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="30"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/seek_hold1" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style2"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:clickable="false"
+                android:focusable="false"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/d_seek_hold1"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Breath Out"
+                    android:id="@+id/t3"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/txt_out"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/seek_out" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style2"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:clickable="false"
+                android:focusable="false"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/d_seek_out"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Hold Breath"
+                    android:id="@+id/t4"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/txt_hold2"
+                    android:layout_weight=".2"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:textColor="#121212"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="30"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/seek_hold2" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/seek_style2"
+                android:thumb="@drawable/custom_thumb"
+                android:indeterminate="false"
+                android:max="29"
+                android:clickable="false"
+                android:focusable="false"
+                android:progress="0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/d_seek_hold2"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Theme"
+            android:id="@+id/t5"
+            android:textColor="#0e0e0e"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical|bottom"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Day / Night"
+                android:id="@+id/t6"
+                android:layout_weight=".5"
+                android:paddingLeft="20dp"
+                android:textColor="#121212"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="center_vertical" />
+
+
+            <ToggleButton
+                android:id="@+id/togg1"
+                android:layout_width="48dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_btn"
+                android:checked="false"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Show word"
+                android:id="@+id/t7"
+                android:layout_weight=".5"
+                android:paddingLeft="20dp"
+                android:textColor="#121212"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="center_vertical" />
+
+            <ToggleButton
+                android:id="@+id/togg2"
+                android:layout_width="48dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Play audio"
+                android:id="@+id/t8"
+                android:layout_weight=".5"
+                android:paddingLeft="20dp"
+                android:textColor="#121212"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="center_vertical" />
+
+            <ToggleButton
+                android:id="@+id/togg3"
+                android:layout_width="48dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="20dp"
+            android:onClick="tap_connect_to_band">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Connect to fitness band"
+                android:id="@+id/textView3"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#121212"
+                android:textSize="16dp"
+                android:typeface="sans"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:id="@+id/textView4"
+                android:gravity="center_vertical|right"
+                android:paddingRight="20dp"
+                android:src="@drawable/ar_right"
+                android:scaleType="fitStart"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
